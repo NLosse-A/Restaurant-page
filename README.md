@@ -98,7 +98,7 @@ This project focuses heavily on visual hierarchy and luxury branding principles:
 
 | Color | Hex |
 |---|---|
-| Background | `#19171b` |
+| Background | <span style="color:#19171b;">`#19171b`</span> |
 | Gold Accent | `#d29f22` |
 | Crimson Accent | `#5d0018` |
 | Surface | `#252628` |
