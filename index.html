@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anima Restaurant</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="images/">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <nav>
+
+            <div class="logo">
+                Anima
+            </div>
+
+            <div class="nav-links">
+
+                <a href="#menu">Menu</a>
+                <a href="#local">Locations</a>
+                <a href="#premios">Awards</a>
+                <a href="#" class="reserve-btn" onclick="openModal()">
+
+                    Reserve
+
+                </a>
+
+
+            </div>
+
+        </nav>
+        <!-- ========================= -->
+        <!-- BACK TO TOP BUTTON -->
+        <!-- ========================= -->
+
+        <button class="back-to-top" id="backToTop">
+
+            ↑
+
+        </button>
+        <section class="hero">
+
+            <div class="gold-shape"></div>
+
+            <div class="hero-text">
+
+                <div class="hero-subtitle">
+                    Star Dish:
+                </div>
+
+                <h1 class="dish-title">
+                    Spaghetti alla <span>Carbonara</span>
+                </h1>
+
+                <p class="description">
+                    Made with fresh and authentic ingredients, our spaghetti alla carbonara is a culinary experience
+                    that combines the smoothness of al dente pasta with the richness of creamy sauce, the
+                    smoky flavor of crispy pancetta and the perfect touch of grated parmesan cheese. Each bite is a
+                    journey to Italy, where tradition meets flavor in every dish.
+                </p>
+
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="slide">
+                    <img src="https://imag.bonviveur.com/espaguetis-a-la-carbonara-con-nata.jpg">
+                </div>
+
+                <div class="slide">
+                    <img
+                        src="https://7diasdesabor.com/wp-content/uploads/2021/09/107235e6d7038844736b0066e80410dad61-2.jpg">
+                </div>
+
+                <div class="slide">
+                    <img
+                        src="https://www.showmoonmag.com/wp-content/uploads/2018/05/Steak-Tartar-el-legado-foodie-de-Genghis-Khan-Cover-1200x900.jpg">
+                </div>
+
+                <div class="slide">
+                    <img src="https://www.recetasdesbieta.com/wp-content/uploads/2018/10/lasagna-original..jpg">
+                </div>
+
+            </div>
+
+            <div class="footer-note">
+                <a href="#contact">Contact Us</a>
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- MENU SECTION -->
+    <!-- ========================= -->
+
+    <section id="menu" class="menu-section">
+
+        <div class="menu-header">
+
+            <span class="menu-subtitle">
+                Our selection
+            </span>
+
+            <h2 class="menu-title">
+                Menu
+            </h2>
+
+            <p class="menu-description">
+                Discover our carefully curated menu, where each dish is a culinary masterpiece that
+                combines fresh ingredients and authentic flavors to offer you an unforgettable gastronomic experience.
+            </p>
+
+        </div>
+
+        <!-- MENU GRID -->
+
+        <div class="menu-grid">
+
+            <!-- CARD 1 -->
+
+            <div class="menu-card">
+
+                <div class="menu-image">
+                    <img src="https://pastaslamuneca.com/wp-content/uploads/2021/04/Pasta-carbonara-receta-italiana-original-768x512.png"
+                        alt="">
+                </div>
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+
+                        <h3>
+                            Spaghetti Carbonara
+                        </h3>
+
+                        <span class="price">
+                            $42
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Classic Italian with creamy egg sauce, crispy pancetta and parmesan cheese.
+                    </p>
+
+                    <button>
+                        View Dish
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="menu-card">
+
+                <div class="menu-image">
+                    <img src="https://okdiario.com/img/2020/03/17/receta-de-bistec-ranchero.jpg" alt="">
+                </div>
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+
+                        <h3>
+                            Ranchero Steak
+                        </h3>
+
+                        <span class="price">
+                            $56
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Juicy grilled steak marinated with Mexican spices, served with ranchero sauce and
+                        traditional side dishes.
+                    </p>
+
+                    <button>
+                        View Dish
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="menu-card">
+
+                <div class="menu-image">
+                    <img src="https://www.cocinavital.mx/wp-content/uploads/2021/07/lasana-napolitana-receta.jpg"
+                        alt="">
+                </div>
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+
+                        <h3>
+                            Neapolitan Lasagna
+                        </h3>
+
+                        <span class="price">
+                            $68
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Layers of fresh pasta, homemade tomato sauce, seasoned ground beef, creamy béchamel and gratinated
+                        cheese, a Neapolitan lasagna that delights the palate with its authentic and comforting flavor.
+                    </p>
+
+                    <button>
+                        View Dish
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 4 -->
+
+            <div class="menu-card">
+
+                <div class="menu-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_qEs1eOe4lMuHjaAtLLqFIIejsCMcZTOTUw&s"
+                        alt="">
+                </div>
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+
+                        <h3>
+                            Stuffed Pork Loin
+                        </h3>
+
+                        <span class="price">
+                            $75
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Pork loin stuffed with spinach and cheese, slowly baked to achieve a juicy
+                        and flavorful texture.
+                    </p>
+
+                    <button>
+                        View Dish
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 5 -->
+
+            <div class="menu-card">
+
+                <div class="menu-image">
+                    <img src="https://buenazo.cronosmedia.glr.pe/original/2020/09/09/5f58f8c082c2f615f804ffdb.jpg"
+                        alt="">
+                </div>
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+
+                        <h3>
+                            Seafood Ceviche
+                        </h3>
+
+                        <span class="price">
+                            $48
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Fresh shrimp and fish ceviche, accompanied by lime juice, cilantro and a touch of
+                        chili.
+                    </p>
+
+                    <button>
+                        View Dish
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 6 -->
+
+            <div class="menu-card">
+
+                <div class="menu-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQdN-t96a89zpXbfSu5gGN0N5_y2sbi4VM5w&s"
+                        alt="">
+                </div>
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+
+                        <h3>
+                            Galician Style Octopus
+                        </h3>
+
+                        <span class="price">
+                            $62
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Tender octopus served over boiled potatoes with olive oil, paprika and coarse salt.
+                    </p>
+
+                    <button>
+                        View Dish
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 7 -->
+
+            <div class="menu-card">
+
+                <div class="menu-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFhPZ0MHxCiAUrwmu2Ot5R0dMR7CW_L7xJHw&s"
+                        alt="">
+                </div>
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+
+                        <h3>
+                            Grilled Salmon
+                        </h3>
+
+                        <span class="price">
+                            $70
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Golden grilled salmon fillet, served with steamed vegetables and lemon sauce.
+                    </p>
+
+                    <button>
+                        View Dish
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 8 -->
+
+            <div class="menu-card">
+
+                <div class="menu-image">
+                    <img src="https://mandolina.co/wp-content/uploads/2021/03/610747100-1.jpg" alt="">
+                </div>
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+
+                        <h3>
+                            Gourmet Burger
+                        </h3>
+
+                        <span class="price">
+                            $39
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Premium beef burger with cheddar cheese, lettuce, tomato and special sauce on a brioche bun.
+                    </p>
+
+                    <button>
+                        View Dish
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- CARD 9 -->
+
+            <div class="menu-card">
+
+                <div class="menu-image">
+                    <img src="https://i.blogs.es/b95a9e/ensalada-griega-1a/450_1000.jpg" alt="">
+                </div>
+
+                <div class="menu-content">
+
+                    <div class="menu-top">
+
+                        <h3>
+                            Greek Salad
+                        </h3>
+
+                        <span class="price">
+                            $32
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Fresh salad with tomato, cucumber, red onion, feta cheese and olives, dressed with
+                        oregano.
+                    </p>
+
+                    <button>
+                        View Dish
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- ABOUT / LOCATIONS SECTION -->
+    <!-- ========================= -->
+
+    <section class="about-section" id="local">
+
+        <!-- LEFT SIDE -->
+
+        <div class="about-content">
+
+            <span class="about-subtitle">
+                OUR STORY
+            </span>
+
+            <h2 class="about-title">
+                A nighttime vision<br>
+                of gourmet cuisine
+            </h2>
+
+            <p class="about-text">
+                At Maison Noire, we are inspired by the elegance and mystery of the Parisian night to create a
+                unique culinary experience.
+            </p>
+
+            <p class="about-text">
+                Our menu is carefully designed to surprise and delight our diners, with dishes
+                that combine fresh ingredients and innovative culinary techniques.
+            </p>
+
+            <!-- LOCATIONS -->
+
+            <div class="locations">
+
+                <div class="location-card">
+
+                    <span class="location-city">
+                        Paris
+                    </span>
+
+                    <span class="location-country">
+                        France
+                    </span>
+
+                </div>
+
+                <div class="location-card">
+
+                    <span class="location-city">
+                        Montreal
+                    </span>
+
+                    <span class="location-country">
+                        Canada
+                    </span>
+
+                </div>
+
+                <div class="location-card">
+
+                    <span class="location-city">
+                        Tokyo
+                    </span>
+
+                    <span class="location-country">
+                        Japan
+                    </span>
+
+                </div>
+
+                <div class="location-card">
+
+                    <span class="location-city">
+                        Mexico City
+                    </span>
+
+                    <span class="location-country">
+                        Mexico
+                    </span>
+
+                </div>
+
+                <div class="location-card">
+
+                    <span class="location-city">
+                        Rome
+                    </span>
+
+                    <span class="location-country">
+                        Italy
+                    </span>
+
+                </div>
+
+                <div class="location-card">
+
+                    <span class="location-city">
+                        Shanghai
+                    </span>
+
+                    <span class="location-country">
+                        China
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="about-image">
+
+            <div class="image-overlay"></div>
+
+            <img src="https://cdn.forbes.com.mx/2023/07/Ryoshi-Masaryk.webp" alt="Restaurant interior">
+
+        </div>
+
+    </section>
+    <!-- ========================= -->
+    <!-- AWARDS SECTION -->
+    <!-- ========================= -->
+
+    <section class="awards-section" id="premios">
+
+        <!-- BACKGROUND GLOW -->
+
+        <div class="awards-glow"></div>
+
+        <!-- HEADER -->
+
+        <div class="awards-header">
+
+            <span class="awards-subtitle">
+                INTERNATIONAL RECOGNITION
+            </span>
+
+            <h2 class="awards-title">
+                Awards and Distinctions
+            </h2>
+
+            <p class="awards-description">
+                Maison Noire has been recognized for its artistic interpretation
+                of contemporary French gastronomy, combining culinary precision
+                with an immersive atmosphere.
+            </p>
+
+        </div>
+
+        <!-- AWARDS GRID -->
+
+        <div class="awards-grid">
+
+            <!-- AWARD 1 -->
+
+            <div class="award-card">
+
+                <div class="award-icon">
+                    ✦
+                </div>
+
+                <span class="award-year">
+                    2022
+                </span>
+
+                <h3>
+                    <a href="https://guide.michelin.com/mx/es/articulo/features/que-es-una-estrella-michelin"
+                        target="_blank">
+                        Michelin Star
+                    </a>
+                </h3>
+
+                <p>
+                    Awarded for exceptional culinary consistency,
+                    top-tier ingredient selection and refined service.
+                </p>
+
+            </div>
+
+            <!-- AWARD 2 -->
+
+            <div class="award-card">
+
+                <div class="award-icon">
+                    ✦
+                </div>
+
+                <span class="award-year">
+                    2023
+                </span>
+
+                <h3>
+                    <a href="https://fooddesignfest.com/conocenos/el-festival/" target="_blank">
+                        Culinary Design Award
+                    </a>
+                </h3>
+
+                <p>
+                    Recognized for combining a modern visual identity
+                    with a contemporary fine dining experience.
+                </p>
+
+            </div>
+
+            <!-- AWARD 3 -->
+
+            <div class="award-card">
+
+                <div class="award-icon">
+                    ✦
+                </div>
+
+                <span class="award-year">
+                    2024
+                </span>
+
+                <h3>
+                    <a href="https://www.google.com/search?q=Best+Luxury+Atmosphere+awards&client=opera-gx&hs=Kl0&sca_esv=e6a1c008c9307d75&sxsrf=ANbL-n52JsWlGIwdp4wtb7S3UPCrQ5frmA%3A1779419869381&ei=3coPas6CF7SzqtsPjJun4As&biw=1662&bih=945&ved=0ahUKEwiO5eHJ98uUAxW0mWoFHYzNCbwQ4dUDCBI&uact=5&oq=Best+Luxury+Atmosphere+awards&gs_lp=Egxnd3Mtd2l6LXNlcnAiHUJlc3QgTHV4dXJ5IEF0bW9zcGhlcmUgYXdhcmRzMgUQIRigAUiXKlCOAViZKHADeAGQAQCYAZYBoAGiB6oBAzYuM7gBA8gBAPgBAZgCDKACyQfCAgoQABhHGNYEGLADmAMAiAYBkAYIkgcDOS4zoAelEbIHAzYuM7gHwAfCBwUyLjkuMcgHEYAIAQ&sclient=gws-wiz-serp"
+                        target="_blank">
+                        Best Luxury Atmosphere
+                    </a>
+                </h3>
+
+                <p>
+                    Honored for creating an intimate nighttime environment
+                    inspired by Parisian elegance.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer class="footer" id="contact">
+
+    <!-- TOP -->
+
+    <div class="footer-top">
+
+        <!-- BRAND -->
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                Anima
+            </div>
+
+            <p class="footer-text">
+
+            Tool outline of hotel Icon by Catalin Fertu on <a href="https://icon-icons.com/authors/369-catalin-fertu">Icon-Icons.com</a>
+            
+            </p>
+            <p class="footer-text">
+                All rights reserved to the corresponding images used in this project, which are sourced from various online platforms and are intended for illustrative purposes only.
+            </p>
+        </div>
+
+        <!-- LINKS -->
+
+        <div class="footer-column">
+
+            <h4>
+                Navigation
+            </h4>
+
+            <a href="#menu">
+                Menu
+            </a>
+
+            <a href="#local">
+                Locations
+            </a>
+
+            <a href="#awards">
+                Awards
+            </a>
+
+        </div>
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h4>
+                Contact
+            </h4>
+
+            <a href="#">
+                Gmail
+            </a>
+
+            <a href="#">
+                +xx xxx-xxx-xxxx
+            </a>
+
+            <a href="#">
+                Open Daily — 18:00 / 02:00
+            </a>
+
+        </div>
+
+        <!-- SOCIAL -->
+
+        <div class="footer-column">
+
+            <h4>
+                Social
+            </h4>
+
+            <a href="https://www.instagram.com/spielweltneverlosse/">
+                Instagram
+            </a>
+
+            <a href="https://twitter.com/SpNevr">
+                Twitter
+            </a>
+
+
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+
+    <div class="footer-bottom">
+
+        <span>
+            © By Neverlosse. All rights reserved.
+        </span>
+
+
+
+    </div>
+
+</footer>
+
+
+    <!-- ========================= -->
+    <!-- RESERVATION MODAL -->
+    <!-- ========================= -->
+
+    <div class="reservation-modal" id="reservationModal">
+
+        <!-- BACKDROP -->
+
+        <div class="modal-backdrop"></div>
+
+        <!-- MODAL CONTENT -->
+
+        <div class="modal-content">
+
+            <!-- CLOSE BUTTON -->
+
+            <button class="close-modal" onclick="closeModal()">
+                ✕
+            </button>
+
+            <!-- HEADER -->
+
+            <span class="modal-subtitle">
+                MAISON NOIRE
+            </span>
+
+            <h2 class="modal-title">
+                Reserve Your Table
+            </h2>
+
+            <p class="modal-description">
+                Experience contemporary French cuisine
+                in an intimate nocturnal atmosphere.
+            </p>
+
+            <!-- FORM -->
+
+            <form class="reservation-form">
+
+                <div class="input-group">
+
+                    <label>
+                        Full Name
+                    </label>
+
+                    <input type="text" placeholder="Your name">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>
+                        Email
+                    </label>
+
+                    <input type="email" placeholder="example@email.com">
+
+                </div>
+
+                <div class="input-row">
+
+                    <div class="input-group">
+
+                        <label>
+                            Date
+                        </label>
+
+                        <input type="date">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>
+                            Guests
+                        </label>
+
+                        <select>
+
+                            <option>2 Guests</option>
+                            <option>4 Guests</option>
+                            <option>6 Guests</option>
+                            <option>8 Guests</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <button type="submit" class="submit-reservation">
+                    Confirm Reservation
+                </button>
+
+            </form>
+
+        </div>
+        
+    </div>
+    
+
+</body>
+<script src="script.js"></script>
+
+</html>
